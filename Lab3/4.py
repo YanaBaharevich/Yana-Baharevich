@@ -1,8 +1,11 @@
-x=int(input("pierwsza liczba:" ))
-y=int(input("druga liczba:" ))
-if (x > y):
+a=int(input("pierwsza liczba:" ))
+b=int(input("druga liczba:" ))
+if (a > b):
  a,b = b,a
 
-while (x <= y):
-    print(x, end=" ")
-    x = x + 1
+while (a <= b):
+    if a % 2 == 1:
+        a=a+1
+        continue
+    print(a, end=" ")
+    a = a + 1
