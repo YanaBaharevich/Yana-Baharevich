@@ -1,13 +1,12 @@
-x=int(input("Proszę dodać liczbę studentów:" ))
-y=1  #liczba od której zaczyna się wpisywanie punktów\pierwszy uczeń
-n=0  #suma punktów
-while (y<=x):
-    if x > 0:
-        print("Punkty studenta po kolejcy",y,":",end=" ")
-        b = int(input())
-        y=y+1
-        n=n+b
-    elif x <= 0:
-        print("Niepoprawna liczba")
-z=n/x #Średnia liczba punktów w grupie
-print("Średnia liczba punktów w grupie: ",z)
+n = int(input("podaj liczbe studentow: "))
+x = 1
+s = 0
+while True:
+    p=int(input(f"podaj liczbe punktow studenta {x}: "))
+    if p > 100 or p < 0:
+        continue
+    x=x+1
+    s =s+p
+    if (n+1==x):
+        break
+print("srednia punktow wynosi:", round(s/n,2) )
