@@ -9,7 +9,7 @@ for i in range (15):
     x=x+a
 print(punkty)
 b=float(input("Podaj punkty:"))
-if a in punkty:
+if b in punkty:
     print(punkty.index(b))
 else:
     print("Nie ma takich punktów")
@@ -23,5 +23,5 @@ for i in range(15):
      punkty_1.append(punkty[i])
  elif punkty[i]<x/15:
      punkty_2.append(punkty[i])
-print("powyżej średniej:",punkty_1)
-print("poniżej średniej:",punkty_2)
+print("powyżej średniej:",punkty_1,len(punkty_1))
+print("poniżej średniej:",punkty_2, len(punkty_2))
